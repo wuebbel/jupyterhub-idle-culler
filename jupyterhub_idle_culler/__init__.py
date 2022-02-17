@@ -183,8 +183,8 @@ async def cull_idle(
         False otherwise.
         """
         log_name = user["name"]
-	if (log_name=="wuebbel"):
-	    return False;
+        if (log_name=="wuebbel"):
+            return False;
         if server_name:
             log_name = "%s/%s" % (user["name"], server_name)
         if server.get("pending"):
